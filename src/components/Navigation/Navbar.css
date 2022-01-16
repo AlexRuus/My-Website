@@ -11,21 +11,12 @@
   height: 100%;
   width: 60%;
 }
-.navigation {
+.links {
   display: flex;
   align-items: center;
   width: 30%;
 }
 
-.navigation button {
-  list-style: none;
-  margin-left: 30px;
-  height: 30px;
-  width: 80px;
-}
-
-.burger-menu {
-  display: flex;
-  align-items: center;
-  height: 30px;
+.links a {
+  margin-right: 10px;
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import Buttons from '../Navigation/Buttons'
+import Navbar from '../Navigation/Navbar'
 import './Header.css'
 
 function Header() {
     return (
         <div className='header-box'>
-            <Buttons />
+            <Navbar />
         </div>
     )
 }
