@@ -1,1 +1,81 @@
+.skills-page-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.html-info {
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+.css-info {
+  background-color: rgb(212, 127, 112);
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+.javascript-info {
+  background-color: rgb(175, 145, 140);
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+.react-info {
+  background-color: rgb(122, 55, 43);
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+.figma-info {
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+.git-info {
+  background-color: rgb(154, 76, 53);
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+
+.html-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+.css-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+.javascript-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+.react-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+.figma-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+.git-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}

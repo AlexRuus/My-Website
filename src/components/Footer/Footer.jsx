@@ -4,7 +4,21 @@ import './Footer.css'
 function Footer() {
     return (
         <div className='footer-content'>
-            <h1>This is the footer page</h1>
+            <div className="my-info">
+                <p>Name</p>
+                <p>Phone</p>
+                <p>Email</p>
+                <p>Adress</p>
+            </div>
+            <div className="contact-form">
+                <p>Name</p>
+                <input type="" />
+                <p>Surname</p>
+                <input type="" />
+                <p>Email</p>
+                <input type="" />
+                <button>submit</button>
+            </div>
         </div>
     )
 }

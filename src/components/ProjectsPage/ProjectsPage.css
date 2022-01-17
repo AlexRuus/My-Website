@@ -2,7 +2,7 @@
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(147, 179, 147);
+  background-color: rgb(219, 223, 219);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,26 +10,41 @@
 }
 
 .context {
-  background-color: darkkhaki;
+  background-color: rgb(221, 221, 220);
   height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects-cards {
-  background-color: darkmagenta;
   height: 70%;
   width: 80%;
   display: flex;
+  justify-content: space-between;
 }
 
 .project-1 {
   width: 30%;
   height: 80%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
 .project-2 {
   width: 30%;
   height: 80%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
 .project-3 {
   width: 30%;
   height: 80%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
