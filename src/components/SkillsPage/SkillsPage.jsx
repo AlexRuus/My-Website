@@ -2,7 +2,7 @@ import React from 'react'
 import './SkillsPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact, faHtml5, faCss3, faFigma, faJs, faGithub} from '@fortawesome/free-brands-svg-icons'
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import { ProgressBar } from './ProgressBar'
 
 function SkillsPage() {
     return (
@@ -14,17 +14,18 @@ function SkillsPage() {
                 </div>
                 <div className="html-text">
                     <p>Html</p>
-                    <ProgressBar now={60} />
+                    <ProgressBar done='90'/>
                 </div>
             </div>
             {/*  */}
             {/*  */}
             <div className="css-info">
                 <div className="css-logo">
-                    <FontAwesomeIcon icon={faCss3} />
+                    <FontAwesomeIcon icon={faCss3} id='test'/>
                 </div>
                 <div className="css-text">
                     <p>CSS</p>
+                    <ProgressBar done='90'/>
                 </div>
             </div>
             {/*  */}
@@ -35,6 +36,7 @@ function SkillsPage() {
                 </div>
                 <div className="javascript-text">
                     <p>JavaScript</p>
+                    <ProgressBar done='65'/>
                 </div>
             </div>
             {/*  */}
@@ -45,6 +47,7 @@ function SkillsPage() {
                 </div>
                 <div className="react-text">
                     <p>ReactJs</p>
+                    <ProgressBar done='55'/>
                 </div>
             </div>
             {/*  */}
@@ -55,6 +58,7 @@ function SkillsPage() {
                 </div>
                 <div className="figma-text">
                     <p>Figma</p>
+                    <ProgressBar done='25'/>
                 </div>
             </div>
             {/*  */}
@@ -65,6 +69,7 @@ function SkillsPage() {
                 </div>
                 <div className="git-text">
                     <p>Git</p>
+                    <ProgressBar done='50'/>
                 </div>
             </div>
         </div>
