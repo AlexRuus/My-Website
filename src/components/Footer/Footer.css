@@ -42,8 +42,5 @@
 }
 
 .form-fields input {
-  color: white !important;
-}
-.form-fields input:hover {
-  border-color: lightcoral !important;
+  color: pink !important;
 }
