@@ -30,6 +30,6 @@
   font-weight: 600;
 }
 .links a:hover {
-  border-bottom: 4px solid yellow;
+  border-bottom: 4px solid #f7d3ce;
   transition: all 0.2s ease-out;
 }

@@ -19,10 +19,6 @@ export const ProgressBar = ({done}) => {
     return (
 		<div className="progress">
 			<div className="progress-done" style={style}>
-				{/* {done} */}
-
-
-				
 			</div>
 		</div>
     )

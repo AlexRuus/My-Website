@@ -12,12 +12,10 @@ const useStyles = makeStyles({
       marginTop: 20,
       marginBottom: 20,
       display: 'flex',
-      color: 'secondary',
-      '&:focus': {
-        borderColor: 'white'
-      }
+      border: 0,
     }
   })
+
 
 const useStylesBtn = makeStyles({
     btn: {
@@ -89,7 +87,6 @@ function Footer() {
                     <TextField
                     onChange={(e) => setSurname(e.target.value)}
                     className={classes.field}
-                    // color='red'
                     label='Surname' 
                     variant='outlined'
                     required
