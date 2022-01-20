@@ -5,6 +5,9 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import SkillsPage from './components/SkillsPage/SkillsPage';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({duration:2000});
 
 
 function App() {
