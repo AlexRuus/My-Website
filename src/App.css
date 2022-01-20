@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  height: 400vh;
+  height: 500vh;
   width: 100%;
   /* background-color: rgb(199, 62, 62); */
   background-image: url('./image/black-concrete-wall.jpg');
@@ -11,6 +11,15 @@
   background-attachment: fixed;
 }
 
+.home-page {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .first-page {
   margin: 0;
   height: 100%;
