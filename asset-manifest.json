@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/My-Website/static/css/main.c4823702.css",
+    "main.js": "/My-Website/static/js/main.b3835fc4.js",
+    "static/media/black-concrete-wall.jpg": "/My-Website/static/media/black-concrete-wall.62c7bdad34af7b8e3e1f.jpg",
+    "index.html": "/My-Website/index.html",
+    "main.c4823702.css.map": "/My-Website/static/css/main.c4823702.css.map",
+    "main.b3835fc4.js.map": "/My-Website/static/js/main.b3835fc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4823702.css",
+    "static/js/main.b3835fc4.js"
+  ]
+}
