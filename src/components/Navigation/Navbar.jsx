@@ -1,12 +1,14 @@
 import React from 'react'
 import './Navbar.css'
 import {links} from './data.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faFingerprint } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
     return (
     <nav className='header-components'>
         <div className="logo-side">
-            <h1>Alex Rus</h1>
+            <FontAwesomeIcon icon={faFingerprint} rotation={360}/>
         </div>
         <div className='links'>
         {links.map((link) => {

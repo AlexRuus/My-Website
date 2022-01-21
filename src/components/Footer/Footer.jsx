@@ -3,9 +3,13 @@ import './Footer.css'
 import TextField from "@material-ui/core/TextField";
 import Button from '@material-ui/core/Button'
 import SendIcon from '@mui/icons-material/Send';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faEnvelope, faUser, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { pink } from '@mui/material/colors'
 import { useState } from 'react';
+import { borderColor } from '@mui/system';
 
 
 const useStyles = makeStyles({
@@ -20,20 +24,29 @@ const useStyles = makeStyles({
 
 const useStylesBtn = makeStyles({
     btn: {
-      backgroundColor: 'grey',
+      backgroundColor: 'transparent',
       fontSize: 24,
       color: '#f7d3ce',
+      border: 2,
+      borderBlockColor: 'white',
       '&:hover' : {
           color: '#fc8474',
           backgroundColor: '#c1c1c1'
       }
+    },
+    overrides: {
+        MuiButton : {
+            root : {
+                border: '4px solid black',
+            }
+        }
     }
   })
 
   const theme = createMuiTheme({
     palette : {
         primary: {
-            main: pink[100]
+            main: '#f7d3ce'
         },
         text: {
             secondary: pink[100]
@@ -99,10 +112,35 @@ function Footer() {
     <ThemeProvider theme={theme}>
             <div className='footer-content' >
                 <div className="my-info">
-                    <p>Name</p>
-                    <p>Phone</p>
-                    <p>Email</p>
-                    <p>Adress</p>
+                    <div className="info-container">
+                        <div className="name-container">
+                            <div className="name-logo">
+                                <FontAwesomeIcon icon={faUser} />
+                            </div>
+                            <div className="name-text">
+                                <p>Name</p>
+                                <p className='bold-name'>Alex Rus</p>
+                            </div>
+                        </div>
+                        <div className="adress-container">
+                            <div className="adress-logo">
+                                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                            </div>
+                            <div className="adress-text">
+                                <p>Adress</p>
+                                <p className='bold-adress'>Romania, Cluj-Napoca</p>
+                            </div>
+                        </div>
+                        <div className="email-container">
+                            <div className="email-logo">
+                                <FontAwesomeIcon icon={faEnvelope}/>
+                            </div>
+                            <div className="email-text">
+                                <p>Email</p>
+                                <p className='bold-email'>alexrus2503@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="contact-form">
                     <form className= 'form-fields' noValidate autoComplete='off' onSubmit={handleSubmit}>
@@ -141,6 +179,7 @@ function Footer() {
                         
                         <Button
                         className={btnClass.btn}
+                        sx={{borderColor: 'white'}}
                         type="submit" 
                         color="primary" 
                         variant="contained"
