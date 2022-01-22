@@ -7,7 +7,7 @@ function FirstPage() {
         <div className='first-page-content'>
             <div className="my-photo-div">
                 <div className="photo-container">
-                    <img className='img' src='./My-website/imgs/resized-personal-photo.png' alt='something123'></img>
+                    <img className='img' src='/My-Website/imgs/resized-personal-photo.png' alt='something123'></img>
                 </div>
             </div>
             <div className="about-me">
