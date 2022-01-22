@@ -8,7 +8,7 @@ function Navbar() {
     return (
     <nav className='header-components'>
         <div className="logo-side">
-            <FontAwesomeIcon icon={faFingerprint} rotation={360}/>
+            <FontAwesomeIcon icon={faFingerprint}/>
         </div>
         <div className='links'>
         {links.map((link) => {

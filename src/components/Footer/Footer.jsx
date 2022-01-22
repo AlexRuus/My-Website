@@ -5,11 +5,9 @@ import Button from '@material-ui/core/Button'
 import SendIcon from '@mui/icons-material/Send';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faEnvelope, faUser, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { makeStyles, ThemeProvider, createTheme } from '@material-ui/core/styles'
 import { pink } from '@mui/material/colors'
 import { useState } from 'react';
-import { borderColor } from '@mui/system';
 
 
 const useStyles = makeStyles({
@@ -24,7 +22,7 @@ const useStyles = makeStyles({
 
 const useStylesBtn = makeStyles({
     btn: {
-      backgroundColor: 'transparent',
+      backgroundColor: 'darkgrey',
       fontSize: 24,
       color: '#f7d3ce',
       border: 2,
@@ -43,7 +41,7 @@ const useStylesBtn = makeStyles({
     }
   })
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette : {
         primary: {
             main: '#f7d3ce'

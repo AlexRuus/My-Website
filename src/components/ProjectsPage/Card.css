@@ -13,11 +13,21 @@
   border-radius: 10px;
 }
 
-.card-body:hover {
-  opacity: 0.5;
+.card-overlay {
+  position: absolute;
+  background-color: transparent;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
 }
-
-.card-body p {
+.card-overlay a {
+  transition: 0.5s ease;
+  -ms-transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,4 +41,14 @@
   border: 5px solid #fff;
   z-index: 1;
   background: rgba(0, 0, 0, 0.349);
+  visibility: hidden;
+  text-decoration: none;
+}
+
+.card-body:hover a {
+  visibility: visible;
+  opacity: 1;
+}
+.card-body:hover {
+  opacity: 0.8;
 }
