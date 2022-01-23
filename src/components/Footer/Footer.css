@@ -45,6 +45,10 @@
   color: pink !important;
 }
 
+.form-fields textarea {
+  color: pink !important;
+}
+
 .info-container {
   height: 80%;
   width: 80%;

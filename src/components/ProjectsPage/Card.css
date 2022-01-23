@@ -9,8 +9,9 @@
 
 .card-body img {
   width: 100%;
-  height: 100%;
+  height: 50%;
   border-radius: 10px;
+  object-fit: unset;
 }
 
 .card-overlay {
@@ -26,10 +27,9 @@
   transition: 0.5s ease;
 }
 .card-overlay a {
-  transition: 0.5s ease;
   -ms-transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   padding: 10px;
   transform: translate(-50%, -50%);

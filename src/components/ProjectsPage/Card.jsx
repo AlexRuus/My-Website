@@ -12,6 +12,7 @@ function Card({img, path}) {
       <img src={img} alt=""/>
       <div className="card-overlay">
         <a href={path} target="_blank" rel="noopener noreferrer">View Source</a>
+        <p>Dog api</p>
       </div>
     </div>
   )

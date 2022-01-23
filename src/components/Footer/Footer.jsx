@@ -87,12 +87,16 @@ function Footer() {
     const [email, setEmail] = useState('');
     const [emailError, setEmailError] = useState(false)
 
+    const[textbox, setTextBox] = useState('')
+    const [textBoxError, setTextBoxError] = useState(false)
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
         setNameError(false)
         setSurnameError(false)
         setEmailError(false)
+        setTextBoxError(false)
 
         if(name === '') {
             setNameError(true)
@@ -100,8 +104,12 @@ function Footer() {
         if(surname === '') {
             setSurnameError(true)
         }
-        if(email === '') {
+        if(email === '' || !email.includes('@')) {
             setEmailError(true)
+        }
+
+        if(textbox == '') {
+            setTextBoxError(true)
         }
 
     }
@@ -167,12 +175,14 @@ function Footer() {
                         error={emailError}
                         />
                         <TextField
+                        onChange={(e) => setTextBox(e.target.value)}
                         className={classes.field}
                         label='Send me a message...'
                         multiline
                         rows={6} 
                         fullWidth
                         variant='outlined'
+                        error={textBoxError}
                         />
                         
                         <Button
