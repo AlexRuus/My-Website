@@ -11,8 +11,8 @@ function ProjectsPage() {
             <div className="projects-cards">
                 <div className="project-1">
                     <Card 
-                    img='/My-Website/imgs/oopgame.png'
-                    path='https://github.com/AlexRuus/SIIT-Alex-Rus/tree/main/10-OOP-Game'
+                    img='/My-Website/imgs/todo.png'
+                    path='https://github.com/AlexRuus/SIIT-Alex-Rus/tree/main/react-props-state-homework'
                     />
                 </div>
                 <div className="project-2">
