@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/My-Website/static/css/main.9e2a2afa.css",
-    "main.js": "/My-Website/static/js/main.9c503bb7.js",
+    "main.js": "/My-Website/static/js/main.21066a76.js",
     "static/media/black-concrete-wall.jpg": "/My-Website/static/media/black-concrete-wall.62c7bdad34af7b8e3e1f.jpg",
     "index.html": "/My-Website/index.html",
     "main.9e2a2afa.css.map": "/My-Website/static/css/main.9e2a2afa.css.map",
-    "main.9c503bb7.js.map": "/My-Website/static/js/main.9c503bb7.js.map"
+    "main.21066a76.js.map": "/My-Website/static/js/main.21066a76.js.map"
   },
   "entrypoints": [
     "static/css/main.9e2a2afa.css",
-    "static/js/main.9c503bb7.js"
+    "static/js/main.21066a76.js"
   ]
 }
