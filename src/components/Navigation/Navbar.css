@@ -6,22 +6,25 @@
   justify-content: center;
 }
 
-.logo-side {
+/* .logo-side {
   display: flex;
   height: 100%;
   width: 60%;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .logo-side svg {
   font-size: 32px;
   color: white;
   margin-left: 140px;
-}
+} */
 .links {
   display: flex;
   align-items: center;
-  width: 30%;
+  justify-content: center;
+  text-transform: uppercase;
+  /* width: 40%; */
 }
 
 .links a {
@@ -39,4 +42,25 @@
 .links a:hover {
   border-bottom: 4px solid #f7d3ce;
   transition: all 0.2s ease-out;
+}
+
+.dropdown {
+  color: white;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 }

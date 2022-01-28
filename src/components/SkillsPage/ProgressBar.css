@@ -18,3 +18,9 @@
   opacity: 0;
   transition: 1s ease 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+  .progress {
+    width: 150px;
+  }
+}

@@ -154,3 +154,33 @@
 .bold-email {
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .my-info {
+    border: none;
+  }
+
+  .info-container svg {
+    font-size: 30px;
+  }
+  .info-container p {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+  .name-container {
+    margin-top: 15px;
+  }
+  .adress-container {
+    margin-top: 15px;
+  }
+  .email-container {
+    margin-top: 15px;
+  }
+}

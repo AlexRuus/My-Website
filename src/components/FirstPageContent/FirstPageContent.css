@@ -83,3 +83,51 @@
 .my-resume a:hover {
   background-color: rgb(105, 104, 104, 0.3);
 }
+
+@media screen and (max-width: 600px) {
+  .first-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .my-photo-div {
+    width: 100%;
+  }
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-text h1 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .my-resume {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-resume a {
+    font-size: 20px;
+    margin-top: 35px;
+    text-decoration: none;
+    color: pink;
+    background-color: transparent;
+    border: 2px solid pink;
+    border-radius: 7px;
+    width: 110px;
+    padding: 10px;
+  }
+}

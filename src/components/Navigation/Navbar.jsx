@@ -2,14 +2,14 @@ import React from 'react'
 import './Navbar.css'
 import {links} from './data.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faFingerprint } from '@fortawesome/free-solid-svg-icons'
+import {  faFingerprint, faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
     return (
     <nav className='header-components'>
-        <div className="logo-side">
+        {/* <div className="logo-side">
             <FontAwesomeIcon icon={faFingerprint}/>
-        </div>
+        </div> */}
         <div className='links'>
         {links.map((link) => {
             return (
@@ -19,6 +19,9 @@ function Navbar() {
             )
           })}
         </div>
+          <div className="dropdown">
+            <FontAwesomeIcon icon={faBars}/>
+          </div>
     </nav>
 
     )
