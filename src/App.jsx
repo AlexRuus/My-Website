@@ -2,7 +2,7 @@ import './App.css';
 import FirstPage from './components/FirstPageContent/FirstPage';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import Navbar from './components/Navigation/Navbar'
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import SkillsPage from './components/SkillsPage/SkillsPage';
 import Particles from "react-tsparticles";
@@ -102,7 +102,7 @@ function App() {
         detectRetina: true,
       }}
     />
-      <Header />
+      <Navbar />
       <section className='home-page' id='home-page' data-aos="fade-right">
         <Home />
       </section>
